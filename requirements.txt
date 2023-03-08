@@ -1,0 +1,2 @@
+fastapi[all]
+coverage==7.1.0
