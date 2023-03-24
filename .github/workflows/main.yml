@@ -86,7 +86,7 @@ jobs:
           sarif-output: sarif
           junit-output: junit
           coverage-output: coverage
-          owner: ${{ github.repository_owner }}
+          owner: forallsecure
 
   #     - name: Upload SARIF file(s)
   #       uses: github/codeql-action/upload-sarif@v2
