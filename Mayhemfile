@@ -1,8 +1,8 @@
 
-image: forallsecure/lighttpd:vulnerable        # fields are unnecessary
+image: unionfindbee/mcode-interpreted:main        # fields are unnecessary
 duration: 60                                   # since they will
-project: forallsecure/lighttpd                 # be filled at
-target: lighttpd                               # run creation time
+project: unionfindbee/mcode-interpreted                # be filled at
+target: mcode-interpreted                             # run creation time
 advanced_triage: true
 tasks:
   - name: exploitability_factors
