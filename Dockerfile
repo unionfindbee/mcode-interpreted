@@ -1,9 +1,16 @@
-FROM debian:buster-slim 
-RUN apt-get update && \
-    apt-get install -y python3 python3-pip
-RUN pip3 install --upgrade pip
-COPY main.py .
-COPY requirements.txt .
+FROM node:19
 
-# install requirements
-RUN pip3 install -r requirements.txt
+WORKDIR /app
+
+COPY package*.json .
+
+RUN npm install
+
+COPY . .
+
+ENV PORT=8081
+
+EXPOSE 8081
+
+CMD ["npm", "start"]
+
