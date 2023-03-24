@@ -12,6 +12,6 @@ tasks:
 cmds:
   - cmd: npm start --prefix /app
     network:
-      url: tcp://localhost:8001
+      url: tcp://localhost:8081
       timeout: 2
       client: false
